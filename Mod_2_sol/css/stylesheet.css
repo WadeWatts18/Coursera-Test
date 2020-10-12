@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    clear: both;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.holder{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: rgba(236, 34, 34, 0.377);
+    
+    overflow: auto;
+    height: 150px;
+}
+.row{
+    width: 100%;
+
+}
+h1{
+    text-align: center;
+    font-family: 'Copperplate Gothic','Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    font-stretch: extra-expanded;
+    color: rgb(94, 26, 26);
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: lighter;
+    font-size: large;
+    width: 130px;
+    margin-block-start: 0px;
+    float: right;
+    text-align: center;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
+    background-color: rgba(155, 101, 0, 0.6);
+}
+
+.lg4, .md-6,.md-12, .sm-12{
+    float: left;
+}
+/*Desktop*/
+@media (min-width: 992px){
+.lg-4{
+    width: 33.33%;
+}
+}
+/*Tablet*/
+@media(min-width:768px) and (max-width:991px){
+.md-6{
+    width: 50%;
+}
+.md-12{
+    width: 100%;
+}
+}
+/*Mobile*/
+@media(max-width:767px){
+.sm-12{
+    width: 100%;
+}
+}
