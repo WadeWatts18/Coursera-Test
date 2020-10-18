@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: darkcyan;
+}
+p{
+	position: relative;
+	clear: both;
+	padding:10px;
+}
+
+.holder{
+	position: relative;
+	margin: 5px;
+	border: 5px solid white;
+	height: 160px;
+	background-color: chartreuse;
+	overflow: auto;
+}
+
+h1{
+	text-align: center;
+	font-size: 30px;
+	color: cornsilk;
+}
+
+h2{
+	background-color: navajowhite;
+	float: right;
+
+	width: 89px;
+	height: 27px;
+	text-align: center;
+
+	margin: 10px;
+	
+}
+
+
+/*For Desktop View*/
+@media (min-width: 992px){
+	.lg-4{
+		float: left;
+	}
+	.lg-4{
+		width: 33%;
+	}
+}
+/*For Tablet View*/
+@media (min-width: 768px) and (max-width: 991px){
+	.md-6 , .md-12{
+		float: left;
+		margin: 4px;
+	}
+	.md-6{
+		width: 48%;
+	}
+	.md-12{
+		width: 97%;
+	}
+}
+/*For Mobile View*/
+@media (max-width: 767px) {
+	.sm,.sm-12{
+		float: left;
+		
+	}
+	.sm-12{
+		width: 91%;
+	}
+}
+</style>
+</head>
+<body>
+	<h1>Our Menu</h1>
+	<div class="row">
+		<div class="lg-4 md-6 sm-12">
+			<div class="holder">
+				<h2>Chicken</h2>
+				<p>Chicken is the most common type of poultry in the world. Owing to the relative ease and low cost of raising them in comparison to animals such as cattle or hogs, chickens have become prevalent throughout the cuisine of cultures around the world, and their meat has been variously adapted to regional tastes.
+				</p>
+	    </div>
+	</div>
+
+	<div class="md-6 lg-4 sm-12">
+		<div class="holder">
+			<h2>Beef</h2>
+			<p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of protein and nutrients.
+			</p>
+		</div>
+	</div>
+
+	<div class="md-12 sm-12 lg-4">
+		<div class="holder">
+			<h2>Sushi</h2>
+			<p>Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari, or sumeshi.
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
