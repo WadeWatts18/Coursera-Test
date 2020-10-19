@@ -4,33 +4,32 @@ body{
 	background-color: #61122f;
 	font-family: 'Oxygen', sans-serif;
 }
-#header-nav{
-	background-color: #f6b319;
-	border-radius: 0;
-	border: 0;
+.navbar{
+	background-color: #f6b319 !important;
+
 }
 #logo-img{
-	background: url('../images/restaurant-logo_large.png') no-repeat;
-	width: 150px;
-	height: 150px;
+	background: url('../images/restaurant-logo_large.png') no-repeat  !important;
+	width: 150px !important;
+	height: 150px !important;
 	margin: 10px 15px 10px 0;
 }
 .navbar-brand{
-	padding-top: 25px;
-}
+	padding-top: 25px !important;
+	}
 .navbar-brand h1{
 	font-family: 'Lora', serif;
-	color: #557c3e;
+	color: #557c3e ;
 	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: bold;
+	text-transform: uppercase ;
+	font-weight: bold ;
 	text-shadow: 1px 1px 1px #222;
-	margin-top: 0;
+	margin-top: 0 ;
 	margin-bottom: 0;
 	line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus{
-	text-decoration: none;
+	text-decoration: none !important;
 }
 .navbar-brand p{
 	color: #000;
@@ -41,27 +40,54 @@ body{
 .navbar-brand p span{
 	vertical-align: middle;
 }
-@media (min-width: 769px) and (max-width: 991px){
-	.visible-md{
-		visibility: visible;
-	}
-	.invisible-md{
-		display: none;
+.navbar-nav{
+	margin: 0 5px;
+	font-size: 1.8em;
+}
+#phone{
+	margin-top: 5px;
+}
+#phone a{
+	text-align: right;
+	padding-bottom: 0;
+	text-decoration: none;
+}
+#phone div{
+	color: #557c3e;
+	text-align: right;
+	padding-right: 15px;
+}
+.nav-item a{
+	color: #951c49;
+	text-align: center;
+	margin: 0 8px;
+}
+.nav-item a:hover{
+	background: #e7e7e7;
+}
+/*For Large Devices*/
+@media (min-width: 1200px){
+
+}
+/*For Medium Size Devices*/
+@media (min-width: 992px) and (max-width: 1199px){
+	#logo-img{
+	background: url('../images/restaurant-logo_medium.png') no-repeat  !important;
+	width: 100px !important;
+	height: 100px !important;
+	margin: 5px 5px 5px 0;
+}
+	.navbar-brand h1{
+	font-size: 1.4em !important;
+}
+}
+/*For Small Size Devices*/
+@media (min-width: 768px) and (max-width: 991px){
+	.navbar-brand h1{
+	font-size: 35px !important;
 	}
 }
-@media (min-width: 992px){
-	.visible-lg{
-		visibility: visible;
-	}
-	.invisible-lg{
-		display: none;
-	}
-}
-@media (max-width: 768px){
-	.invisible-sm{
-		display: none;
-	}
-	.visibile-sm{
-		display: all;
-	}
+/*For Extra Small Devices*/
+@media (max-width: 767px){
+
 }
