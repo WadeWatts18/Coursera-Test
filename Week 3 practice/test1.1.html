@@ -7,27 +7,29 @@
     <title>Test 1.1</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/aaca6e313c.js" crossorigin="anonymous"></script>    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aaca6e313c.js" crossorigin="anonymous"></script>    
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
- <style> 
-        /* Set the border color */ 
-          
+    <style> 
+        /* Set the border color */
+
         .custom-toggler.navbar-toggler { 
             border-color: maroon; 
         } 
-        /* Setting the stroke to green using rgb values (0, 128, 0) */ 
-          
+        /* Setting the stroke to maroon using rgb values (0, 128, 0) */ 
+        
         .custom-toggler .navbar-toggler-icon { 
-            background-image: url( 
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
-        } 
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+        }
     </style> 
 </head>
+
 <body>
 	<header>
+    <!--*******NAVBAR STARTS HERE**********-->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			
-				<a href="test1.1.html" class="float-left d-none d-md-block ">s
+			<div class="container">
+				<a href="test1.1.html" class="float-left d-none d-md-block ">
 					<div id="logo-img"></div>
 				</a>
 				<div class="navbar-brand">
@@ -45,33 +47,97 @@
   				<div class=" collapse navbar-collapse justify-content-end text-sm-center" id="navbarSupportedContent">
     				<ul class="navbar-nav">
       					<li class="nav-item ">
-        					<a href="#"><span class="fa fa-utensils"><br class="d-sm-none d-lg-inline-block"> Menu</span></a>
+        					<a href="#"><span class="fa fa-utensils"><br class="d-none d-lg-inline-block"> Menu</span></a>
       					</li>
       					<li class="nav-item">
         					<a href="#">
-        					<span class="fa fa-info-circle"><br class="d-sm-none d-lg-inline-block"> About</span> </a>
+        					<span class="fa fa-info-circle"><br class="d-none d-lg-inline-block"> About</span> </a>
       					</li>
       					<li class="nav-item">
         					<a href="#">
-        						<span class="fa fa-certificate"><br class="d-sm-none d-lg-inline-block"> Awards</span>
+        						<span class="fa fa-certificate"><br class="d-none d-lg-inline-block"> Awards</span>
         					</a>
       					</li>
-      					<li id="phone" class="nav-item">
+            </ul>
+            </div>
+      				<div id="phone" class="nav-item d-none d-md-block">
       						<a href="tel:9425283280">
       							<span> 9425283280</span>
       						</a>
       						<div>*We deliver</div>
-      					</li>
-    				</ul>
-  				</div>
-
+      				</div>
+      </div>
 		</nav>
-
+    <!--*******NAVBAR ENDS HERE********-->
 	</header>
+  <br>
+  <div id="call-btn" class=" d-md-none ">
+    <div class="container">
+    <a href="tel:9425283280">
+        <span class="fa fa-phone-alt"> 9425283280</span>
+    </a>
+    <div>*We deliver</div>
+    </div>
+  </div>
 
+  <div id="main-content" class="container">
+    <div class="jumbotron">
+      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-fluid d-block d-md-none">
+    </div>
 
+    <div id="home-tiles" class="row">
+      <div class="col-md-6 col-sm-12 col-lg-4 col-12">
+        <a href="menu-category.html">
+          <div id="menu-tile">
+            <span>Menu</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-4 col-12">
+        <a href="single-category.html">
+          <div id="specials-tile">
+            <span>Specials</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-12 col-sm-12 col-lg-4 col-12">
+        <a href="https://goo.gl/maps/oiKxYrpEzW39gEyD7" target="_blank">
+          <div id="map-tile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14753.900076858245!2d82.64939872202125!3d22.411140104815292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a278983f64b905f%3A0x9a3167ffd4dbf361!2zMjLCsDI0JzQwLjEiTiA4MsKwMzknMTYuNiJF!5e0!3m2!1sen!2sin!4v1603232056272!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <span>Map</span>
+          </div>
+        </a>
+      </div>
+    </div><!--*****END OF HOME TILES***-->
+
+  </div><!--****END OF MAIN CONTENT*****-->
+
+  <footer class="card-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>Sun-Thurs: 11:15am - 10::00pm<br>Fri: 11:15am - 2:30pm<br>Saturday Closed
+          <hr class="d-sm-block ">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>7105 Registration Road<br>Baltimore,MD 21215
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $charge for all deliveries.</p>
+          <hr class="d-sm-block">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+    </div>
+    
+  </footer>
+
+  <!--*******  JAVASCRIPTS  *******-->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
+
 </body>
 </html>
