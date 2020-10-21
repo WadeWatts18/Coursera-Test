@@ -69,10 +69,12 @@ body{
 }
 .nav-item a{
 	color: #951c49;
+	padding: 2px;
 	text-align: center;
 	margin: 0 8px;
 }
-.nav-item a:hover{
+
+.nav-item :hover{
 	background: #e7e7e7;
 }
 /*****HOME PAGE******/
@@ -116,6 +118,96 @@ body{
 	color: #fff;
 	opacity: .8;
 }
+/* END OF HOME PAGE*/
+
+/*MENU CATEGORIES PAGE*/
+.category-tile{
+	position: relative;
+	border: 2px solid #3f0c1f;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+}
+
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+
+.category-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-title{
+	margin-top: 20px;
+}
+#menu-categories-title + div{
+	margin-bottom: 50px;
+}
+
+/*END OF MENU CATEGORIES PAGE*/
+
+/*SINGLE CATEGORY PAGE*/
+
+.menu-item-tile{
+	margin-bottom: 25px;
+	color: white;
+}
+.menu-item-tile hr{
+	width: 80%;
+	border: 1px solid white;
+}
+.menu-item-tile .menu-item-price{
+	font-size: 1.1em;
+	text-align: right;
+	margin-top: -10px;
+	margin-right:0px;
+}
+.menu-item-tile .menu-item-price span{
+	font-size: .6em;
+}
+
+.menu-item-photo{
+	position: relative;
+	border: 2px solid #3f0c1f;
+	overflow: hidden;
+	padding: 0;
+	
+	margin-right: auto;
+	margin-bottom:20px;
+	margin-left: auto;
+	max-width: 250px;
+}
+
+.menu-item-photo div{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	background-color: #557c3e;
+	text-align: center;
+}
+
+.menu-item-description{
+	padding-right: 30px;
+}
+h3.menu-item-title{
+	margin: 0 0 10px;
+}
+p.menu-item-details{
+	font-size: .9em;
+	font-style: italic;
+}
+
+/*END OF SINGLE CATEGORY PAGE*/
 
 /*FOOTER*/
 .card-footer{
@@ -184,9 +276,16 @@ body{
 		background: url("../images/jumbotron_768.jpg") no-repeat;
 		height: 432px;
 	}
+	.menu-item-tile .menu-item-price {
+    margin-right: 10px;
+  	}
 }
 /*For Extra Small Devices*/
 @media (max-width: 767px){
+	.navbar-brand h1{
+	font-size: 24px !important;
+	margin:-5px; 
+	}
 	#call-btn{
 		text-align: center;
 	}
@@ -199,7 +298,7 @@ body{
 
 		font-size: 24px;
 		border: 2px solid white;
-		border-radius: 6px;
+		border-radius: 3px;
 	}
 	#call-btn div{
 		color: white;
@@ -212,7 +311,7 @@ body{
 
 	}
 	#menu-tile, #specials-tile{
-		width: 360px;
+		width: 330px;
 		margin:0 auto 15px;
 	}
 	.card-footer section{
@@ -226,4 +325,21 @@ body{
 		width: 50%;
 		border-bottom: 1px solid white;
 	}
+	.menu-item-tile .menu-item-price {
+    text-align: center;
+  	}
+  	.menu-item-description {
+    text-align: center;
+  	}
+  	
 }
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }.navbar-brand p{
+  	font-size: 13px;
+  }
+ }
